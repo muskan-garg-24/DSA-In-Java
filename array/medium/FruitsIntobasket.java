@@ -22,7 +22,7 @@ public static void main(String[] args) {
 
         int[] fruits = {1,2,1,2,3};
 
-        System.out.println("Brute: " + totalFruitBrute(fruits));
+        //System.out.println("Brute: " + totalFruitBrute(fruits));
         System.out.println("Optimal: " + totalFruitOptimal(fruits));
     }
 
