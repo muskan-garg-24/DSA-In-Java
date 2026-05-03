@@ -1,7 +1,6 @@
 /*
-Problem - Longest Subarray with Sum = K
+Problem - Longest Subarray with Sum = K (GFG)
 Pattern - Hashing + PrefixSum
-Platform: GeeksforGeeks
 Asked in: Amazon
 
 Brute   T.C - O(n^2)

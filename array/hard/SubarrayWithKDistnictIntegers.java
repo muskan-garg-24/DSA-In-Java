@@ -1,7 +1,6 @@
 /* This code contains brute, better and optimal solution.
-Problem - Subarrays with K Distinct Integers
+Problem - Subarrays with K Distinct Integers (LeetCode - 992)
 Pattern - Sliding Window + Hashing
-Platform: LeetCode
 Asked in: Google, Amazon
 
 Brute   T.C - O(n^3)
@@ -32,7 +31,6 @@ public class SubarrayWithKDistnictIntegers {
         //System.out.println("Optimal: " + subarraysWithKDistinctOptimal(nums, k));
     }
 
-    // Exact K = AtMost(K) - AtMost(K-1)
     public static int subarraysWithKDistinctOptimal(int[] nums, int k) {
         return atMost(nums, k) - atMost(nums, k - 1);
     }
