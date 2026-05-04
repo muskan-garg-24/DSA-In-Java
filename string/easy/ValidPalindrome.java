@@ -1,3 +1,16 @@
+/* This code contain both brute and optimal functions
+
+Problem - Valid Palindrome (Leet code - 680)
+Pattern - Two Pointer
+Asked in: Amazon, Microsoft, Adobe
+
+Brute   T.C - O(n)
+        S.C - O(n)
+        
+Optimal T.C - O(n)
+        S.C - O(1)
+*/
+
 package string.easy;
 
 public class ValidPalindrome {
@@ -8,8 +21,6 @@ public class ValidPalindrome {
         //System.out.println("Brute: " + isPalindromeBrute(s));
     }
 
-    // ✅ Optimal Approach (Two Pointer)
-    // T.C = O(n), S.C = O(1)
     public static boolean isPalindromeOptimal(String s) {
         int left = 0;
         int right = s.length() - 1;
@@ -34,8 +45,6 @@ public class ValidPalindrome {
         return true;
     }
 
-    // ✅ Brute Force Approach
-    // T.C = O(n), S.C = O(n)
     public static boolean isPalindromeBrute(String s) {
         StringBuilder cleaned = new StringBuilder();
 
