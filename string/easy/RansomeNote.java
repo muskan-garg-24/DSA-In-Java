@@ -1,3 +1,15 @@
+/* This code contains both brute and optimal solutions
+Problem - Ransom Note (LeetCode - 383)
+Pattern - Hashing
+Asked in: Amazon, Microsoft 
+
+Brute   T.C - O(n * m)
+        S.C - O(1)
+
+Optimal T.C - O(n + m)
+        S.C - O(1) (26 size array)
+*/
+
 package string.easy;
 
 public class RansomeNote {
@@ -6,7 +18,7 @@ public class RansomeNote {
         String ransomNote = "aa";
         String magazine = "aab";
 
-        System.out.println("Brute: " + canConstructBrute(ransomNote, magazine));
+        //System.out.println("Brute: " + canConstructBrute(ransomNote, magazine));
         System.out.println("Optimal: " + canConstructOptimal(ransomNote, magazine));
     }
 
