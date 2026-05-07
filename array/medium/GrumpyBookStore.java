@@ -18,11 +18,10 @@ public class GrumpyBookStore {
         int[] grumpy =    {0,1,0,1,0,1,0,1};
         int minutes = 3;
 
-        System.out.println("Brute: " + maxSatisfiedBrute(customers, grumpy, minutes));
+        //System.out.println("Brute: " + maxSatisfiedBrute(customers, grumpy, minutes));
         System.out.println("Optimal: " + maxSatisfiedOptimal(customers, grumpy, minutes));
     }
 
-    // ---------------- OPTIMAL ----------------
     public static int maxSatisfiedOptimal(int[] customers, int[] grumpy, int minutes) {
 
         int n = customers.length;
@@ -55,7 +54,6 @@ public class GrumpyBookStore {
         return alreadySatisfied + maxExtra;
     }
 
-    // ---------------- BRUTE ----------------
     public static int maxSatisfiedBrute(int[] customers, int[] grumpy, int minutes) {
 
         int n = customers.length;
